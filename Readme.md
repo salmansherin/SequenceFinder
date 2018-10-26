@@ -19,3 +19,6 @@ This application tokenize Java source code files and compile a list of longest c
 
 ## Results
 After running the application, it takes all the provided arguments and tokenize it. Then it compares the tokanized code and match the longest sequence and compile a CSV file with token counts, score and the source code. The CSV file will be generated in the project main directory, for example, 'TokenizingCode' in this case.
+
+##Testing
+This application is already run on some of the existing java files i.e. AbstractJavaSource.java and WebDriverBackedEmbeddedBrowser.java, which are already included in this repository. The resultant CSV file can be seen [here](https://github.com/salmansherin29/Task-2/tree/master/TokenizingCode) with the name test.csv.
