@@ -1,11 +1,21 @@
-This program takes in a list of source code files as an arguments and then proceeds to tokenize the tokens from the source code and report the longest common token subsequences across all the files. The program generates CSV file with the column names: Score (calculated as score = log2(tokens) * log2(count)), Tokens, Count and Source code.
-The application uses an existing [tokenizer-parser](https://github.com/kevinjalbert/tokenizing-parser) to parse the java code.
-The application is already run/tested on the files from an [existing github repository](https://github.com/crawljax/crawljax) and the results are reported by the application in file 'devs.csv'.
-### How to Run the application:
-- Clone the github repository
-- Run the application via java command line or Netbeans by passing the list of source code files (separated by space) as arguments.
+## Introduction
+This application tokenize Java source code files and compile a list of longest common tokenizer sequences.
 
-### How the program works:
-- The program fisrt parses all the java source code files and tokenize it into multidimentional array list.
-- Than with the help of nested loops the longest sequences are extracted, which are common in the list of files.
-- Finally it generates a csv file as a result.
+## Installation & configuration
+1. [Download this application](https://github.com/salmansherin29/Task-2/archive/master.zip).
+2. Extract the content of the downloaded zip file into a directory.
+3. Open Terminal or Command prompt in windows.
+4. CD to the application directory like `cd TokenizingCode/src`
+
+## Running the code
+1. Run the following command to compile the application
+2. `javac tokenizingcode/TokenizingCode.java`
+3. After compiling, You can run the application with the follwing command
+4. `java tokenizingcode.TokenizingCode file1.java file2.java file3.java`
+5. You should provide absolute file URLs like
+6. `java tokenizingcode.TokenizingCode /Users/Demo/app/file1.java /Users/Demo/app/file2.java`
+7. Or provide relatove URLs like
+8. `java tokenizingcode.TokenizingCode ./app/file.java ./app/file2.java`
+
+## Results
+After running the application, The application takes all the provided arguments and tokenize it. Then it comparses the tokanized code and match the longest sequence and compile a CSV file with token counts, score and the source code. The CSV file will be generated in the project main directory, for example, 'TokenizingCode' in this case.
