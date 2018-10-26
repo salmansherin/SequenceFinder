@@ -14,8 +14,8 @@ This application tokenize Java source code files and compile a list of longest c
 4. `java tokenizingcode.TokenizingCode file1.java file2.java file3.java`
 5. You should provide absolute file URLs like
 6. `java tokenizingcode.TokenizingCode /Users/Demo/app/file1.java /Users/Demo/app/file2.java`
-7. Or provide relatove URLs like
+7. Or provide relative URLs like
 8. `java tokenizingcode.TokenizingCode ./app/file.java ./app/file2.java`
 
 ## Results
-After running the application, The application takes all the provided arguments and tokenize it. Then it comparses the tokanized code and match the longest sequence and compile a CSV file with token counts, score and the source code. The CSV file will be generated in the project main directory, for example, 'TokenizingCode' in this case.
+After running the application, it takes all the provided arguments and tokenize it. Then it compares the tokanized code and match the longest sequence and compile a CSV file with token counts, score and the source code. The CSV file will be generated in the project main directory, for example, 'TokenizingCode' in this case.
